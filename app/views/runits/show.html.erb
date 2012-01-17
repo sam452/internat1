@@ -1,0 +1,34 @@
+<h2><%= t :hello %></h2>
+
+<p id="notice"><%= notice %></p>
+
+
+<p>
+  <b><%= t :commodity %>:</b>
+  <%= @runit.commodity %>
+</p>
+
+<p>
+  <b>Whlse Unit:</b>
+  <%= @runit.whlse_unit %>
+</p>
+
+<p>
+  <b>Retail unit:</b>
+  <%= @runit.retail_unit %>
+</p>
+
+<p>
+  <b>Receipt unit:</b>
+  <%= @runit.receipt_unit %>
+</p>
+
+<p>
+  <b>Language:</b>
+  <%= @runit.language %>
+</p>
+
+
+
+<%= link_to 'Edit', edit_runit_path(@runit) %> |
+<%= link_to 'Back', runits_path %>

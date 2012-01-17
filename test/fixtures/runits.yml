@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  commodity: MyString
+  language: MyString
+  whlse_unit: MyString
+  retail_unit: MyString
+  receipt_unit: MyString
+
+two:
+  commodity: MyString
+  language: MyString
+  whlse_unit: MyString
+  retail_unit: MyString
+  receipt_unit: MyString

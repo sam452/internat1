@@ -1,0 +1,37 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  date: 2012-01-14
+  type: 
+  commodity: MyString
+  quality: MyString
+  farm_gate_unit: MyString
+  farm_gate_high: 
+  farm_gate_low: 
+  delivered_unit: MyString
+  delivered_high: 
+  delivered_low: 
+  whlse_unit: MyString
+  whlse_high: 
+  whlse_low: 
+  retail_unit: MyString
+  retail_high: 
+  retail_low: 
+
+two:
+  date: 2012-01-14
+  type: 
+  commodity: MyString
+  quality: MyString
+  farm_gate_unit: MyString
+  farm_gate_high: 
+  farm_gate_low: 
+  delivered_unit: MyString
+  delivered_high: 
+  delivered_low: 
+  whlse_unit: MyString
+  whlse_high: 
+  whlse_low: 
+  retail_unit: MyString
+  retail_high: 
+  retail_low: 

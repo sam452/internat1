@@ -1,0 +1,88 @@
+<h2><%= t :hello %></h2>
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b><%= t :date %>:</b>
+  <%= @price.date %>
+</p>
+
+<p>
+  <b><%= t :type %>:</b>
+  <%= @price.type %>
+</p>
+
+<p>
+  <b><%= t :commodity %>:</b>
+  <%= f.select :commodity, Runit.all.collect {|runit| [runit.commodity, runit.id]} %>
+</p>
+
+
+<p>
+  <b><%= t :quality %>:</b>
+  <%= @price.quality %>
+</p>
+
+<p>
+  <b><%= t :farm gate unit %>:</b>
+  <%= @price.farm_gate_unit %>
+</p>
+
+<p>
+  <b><%= t :farm gate high %>:</b>
+  <%= @price.farm_gate_high %>
+</p>
+
+<p>
+  <b><%= t :farm gate low %>:</b>
+  <%= @price.farm_gate_low %>
+</p>
+
+<p>
+  <b><%= t :delivered unit %>:</b>
+  <%= @price.delivered_unit %>
+</p>
+
+<p>
+  <b><%= t :delivered high %>:</b>
+  <%= @price.delivered_high %>
+</p>
+
+<p>
+  <b><%= t :delivered low %>:</b>
+  <%= @price.delivered_low %>
+</p>
+
+<p>
+  <b><%= t :whlse unit %>:</b>
+  <%= @price.whlse_unit %>
+</p>
+
+<p>
+  <b><%= t :whlse high %>:</b>
+  <%= @price.whlse_high %>
+</p>
+
+<p>
+  <b><%= t :whlse low %>:</b>
+  <%= @price.whlse_low %>
+</p>
+
+<p>
+  <b><%= t :retail unit %>:</b>
+  <%= @price.retail_unit %>
+</p>
+
+<p>
+  <b><%= t :retail high %>:</b>
+  <%= @price.retail_high %>
+</p>
+
+<p>
+  <b><%= t :retail low %>:</b>
+  <%= @price.retail_low %>
+</p>
+
+
+<%= link_to 'Edit', edit_price_path(@price) %> |
+<%= link_to 'Back', prices_path %>

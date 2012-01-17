@@ -1,0 +1,31 @@
+<h1>Listing runits</h1>
+
+<table>
+  <tr>
+    <th>Commodity</th>
+    <th>Language</th>
+    <th>Wholsale unit</th>
+    <th>Retail Unit</th>
+    <th>Receipt Unit</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @runits.each do |runit| %>
+  <tr>
+    <td><%= runit.commodity %></td>
+    <td><%= runit.language %></td>
+    <td><%= runit.whlse_unit %></td>
+    <td><%= runit.retail_unit %></td>
+    <td><%= runit.receipt_unit %></td>
+    <td><%= link_to 'Show', runit %></td>
+    <td><%= link_to 'Edit', edit_runit_path(runit) %></td>
+    <td><%= link_to 'Destroy', runit, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Reference Unit', new_runit_path %>

@@ -1,0 +1,53 @@
+<h1>Listing prices</h1>
+
+<table>
+  <tr>
+    <th>Date</th>
+    <th>Type</th>
+    <th>Commodity</th>
+    <th>Quality</th>
+    <th>Farm gate unit</th>
+    <th>Farm gate high</th>
+    <th>Farm gate low</th>
+    <th>Delivered unit</th>
+    <th>Delivered high</th>
+    <th>Delivered low</th>
+    <th>Whlse unit</th>
+    <th>Whlse high</th>
+    <th>Whlse low</th>
+    <th>Retail unit</th>
+    <th>Retail high</th>
+    <th>Retail low</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @prices.each do |price| %>
+  <tr>
+    <td><%= price.date %></td>
+    <td><%= price.type %></td>
+    <td><%= price.commodity %></td>
+    <td><%= price.quality %></td>
+    <td><%= price.farm_gate_unit %></td>
+    <td><%= price.farm_gate_high %></td>
+    <td><%= price.farm_gate_low %></td>
+    <td><%= price.delivered_unit %></td>
+    <td><%= price.delivered_high %></td>
+    <td><%= price.delivered_low %></td>
+    <td><%= price.whlse_unit %></td>
+    <td><%= price.whlse_high %></td>
+    <td><%= price.whlse_low %></td>
+    <td><%= price.retail_unit %></td>
+    <td><%= price.retail_high %></td>
+    <td><%= price.retail_low %></td>
+    <td><%= link_to 'Show', price %></td>
+    <td><%= link_to 'Edit', edit_price_path(price) %></td>
+    <td><%= link_to 'Destroy', price, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Price', new_price_path %>

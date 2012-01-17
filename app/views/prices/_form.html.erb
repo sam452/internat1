@@ -1,0 +1,81 @@
+<%= form_for(@price) do |f| %>
+  <% if @price.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@price.errors.count, "error") %> prohibited this price from being saved:</h2>
+
+      <ul>
+      <% @price.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :date %><br />
+    <%= f.date_select :date %>
+  </div>
+  <div class="field">
+    <%= f.label :type %><br />
+    <%= f.text_field :type %>
+  </div>
+  <div class="field">
+    <%= f.label :commodity %><br />
+    <%= f.text_field :commodity %>
+  </div>
+  <div class="field">
+    <%= f.label :quality %><br />
+    <%= f.text_field :quality %>
+  </div>
+  <div class="field">
+    <%= f.label :farm_gate_unit %><br />
+    <%= f.text_field :farm_gate_unit %>
+  </div>
+  <div class="field">
+    <%= f.label :farm_gate_high %><br />
+    <%= f.text_field :farm_gate_high %>
+  </div>
+  <div class="field">
+    <%= f.label :farm_gate_low %><br />
+    <%= f.text_field :farm_gate_low %>
+  </div>
+  <div class="field">
+    <%= f.label :delivered_unit %><br />
+    <%= f.text_field :delivered_unit %>
+  </div>
+  <div class="field">
+    <%= f.label :delivered_high %><br />
+    <%= f.text_field :delivered_high %>
+  </div>
+  <div class="field">
+    <%= f.label :delivered_low %><br />
+    <%= f.text_field :delivered_low %>
+  </div>
+  <div class="field">
+    <%= f.label :whlse_unit %><br />
+    <%= f.text_field :whlse_unit %>
+  </div>
+  <div class="field">
+    <%= f.label :whlse_high %><br />
+    <%= f.text_field :whlse_high %>
+  </div>
+  <div class="field">
+    <%= f.label :whlse_low %><br />
+    <%= f.text_field :whlse_low %>
+  </div>
+  <div class="field">
+    <%= f.label :retail_unit %><br />
+    <%= f.text_field :retail_unit %>
+  </div>
+  <div class="field">
+    <%= f.label :retail_high %><br />
+    <%= f.text_field :retail_high %>
+  </div>
+  <div class="field">
+    <%= f.label :retail_low %><br />
+    <%= f.text_field :retail_low %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
